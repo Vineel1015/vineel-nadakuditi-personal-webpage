@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineel Nadakuditi - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .education-item, .experience-item, .project-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .education-item:last-child, .experience-item:last-child, .project-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .education-item h3, .experience-item h3, .project-item h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-item .meta, .experience-item .meta {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item ul, .project-item ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .experience-item li, .project-item li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .education-item p {
+            margin-bottom: 0.3rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skill-category li {
+            padding: 0.3rem 0;
+            color: #555;
+        }
+
+        .skill-category li:before {
+            content: "▹ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .interest-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vineel Nadakuditi</h1>
+        <p>ML/LLM/AI Developer | Data Pipelines | Cloud Computing</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#interests">Interests</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>Hello! I'm Vineel Nadakuditi, a passionate ML/LLM/AI Developer based in New York. I specialize in building scalable machine learning models and data pipelines, and love creating impactful AI solutions. With a strong foundation in computer science and data engineering, I strive to build solutions that make a difference.</p>
+            <p>Feel free to explore my work and get in touch if you'd like to collaborate!</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>B.S in Computer Science and Data Analytics</h3>
+                <div class="meta">Rutgers University, New Brunswick, NJ | September 2022 - December 2026</div>
+                <p><strong>GPA: 4.0/4.0, Dean's List</strong></p>
+                <p><strong>Related Coursework:</strong> Data Mining, Time Series Modeling, Large Scale Data Analytics, Machine Learning Principles</p>
+                <p><strong>Focus Areas:</strong> Data Processing, NLP, MCP, Multi-Modal Supervised Model Tuning, Vertex AI studio, Big Data (Databricks)</p>
+            </div>
+            <div class="education-item">
+                <h3>AWS Cloud Practitioner Certification</h3>
+                <div class="meta">Amazon Web Services | 2025</div>
+                <p>Score: 950/1000</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Data Analyst</h3>
+                <div class="meta">Project Innovate Newark, Newark, NJ | September 2024 - Present</div>
+                <ul>
+                    <li>Aggregated financial and transaction data from multiple sources into pandas dataframes to visualize organizations' inflows and outflows to reduce company spend and increase visibility of $50,000+ in funds across 4 departments</li>
+                    <li>Developed a data pipeline using Kafka, S3, Glue, Athena, and Python to collect data through the QuickBooks API, using Athena to manipulate and query data, and produce actionable insights on costs to cut (saved $10,000)</li>
+                    <li>Maintained data pipeline outflow to carry out automatic queries using AWS Lambda for effective data fetching and alert for any outlier values, using Slack API to alert the financial department, resulting in 80% faster response times</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Machine Learning Intern</h3>
+                <div class="meta">Rutgers Computer Science Department, New Brunswick, NJ | January 2025 - August 2025</div>
+                <ul>
+                    <li>Researched BRNN, LSTM, and various RNN deep learning ML models to forecast student grades and various other coursework-related topics to determine various levels of intervention at a 90% success rate</li>
+                    <li>Developed a long short-term memory model to determine drug and alcohol abuse by students with various levels of consumption while implementing robust ETL with S3, Glue, and Athena for data validation and exploration</li>
+                    <li>Performed data cleaning using R, SQL, and Python on a 26,000 record table to produce cleaned features for model input, resulting in 10% increase in model accuracy in determining student performance in the LSTM model</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Kiknic - Rutgers Health Hack</h3>
+                <p><strong>Technologies:</strong> PyTorch, Matplotlib, Pandas, Swift, Firebase, React | November 2024</p>
+                <ul>
+                    <li>Developed a time series table using information gathered from the Apple HealthKit API framework to aggregate data, engineer useful features, and develop models for classifying hand movements and tracking heart rate</li>
+                    <li>Orchestrated data pipelines for managing inputs into the Long Short Term Memory classifier model and providing a 97% accuracy using pandas for data manipulation, matplotlib for visualizations, and scipy for model building</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Real Time Stock Market Data Analysis + Decomposition</h3>
+                <p><strong>Technologies:</strong> Kafka, Athena, S3, AWS Glue, EC2 | February 2026</p>
+                <ul>
+                    <li>Built a real-time data streaming pipeline by initializing producer, broker, and consumer clients for efficient data retrieval using Kafka partitions and topics, leveraging a dictionary structure for 50% faster data retrieval speeds</li>
+                    <li>Practiced data cleaning methods to format and remove noisy data using Pandas inbuilt functions, as well as data visualizations to maintain consistent data integrity and composition for better time series analysis</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Vertex Studio AI Supervised Machine Learning Project</h3>
+                <p><strong>Technologies:</strong> AWS, Databricks, FastAPI, Python | January 2026</p>
+                <ul>
+                    <li>Formulated a solution for stronger attribute correlation using pandas/matplotlib to produce better training datasets, improving Gemini-Pro model output quality by 30% in tasks related to data analysis in NYC open park datasets</li>
+                    <li>Simplified ETL process for loading in new data, reducing inference time by 20%, and providing clients with faster responses over 300 separate accounts, and enabling longer context windows for more intensive tasks with GIS data</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Brooklyn Nets Exploratory Data Analysis Project</h3>
+                <p><strong>Technologies:</strong> R, SQL, Excel, Tableau | January 2026</p>
+                <ul>
+                    <li>Ingested data from 2001 to 2025 using SQL for exploratory data analysis, including CTEs, Table joins, and Groupby statements for aggregation, resulting in 10 cleaned tables with 60,000+ entries to analyze</li>
+                    <li>Took advantage of t-test statistical tests in R on a 95% confidence interval testing for significance in points, rebounds, blocks, turnovers, and 10+ other features, as well as visualized independent relationships between columns</li>
+                    <li>Developed a pitch deck for the analysis of models, resulting in a clear ranking of priorities for team improvement based on previous statistical tests, including an extensive Tableau story with 5 story points for clear visualizations</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>TypeScript</li>
+                        <li>HTML/CSS</li>
+                        <li>Swift</li>
+                        <li>Dart</li>
+                        <li>Ruby</li>
+                        <li>Scala</li>
+                        <li>Rust</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <ul>
+                        <li>Amazon Web Services (AWS)</li>
+                        <li>S3</li>
+                        <li>EC2</li>
+                        <li>Lambda</li>
+                        <li>Glue</li>
+                        <li>Athena</li>
+                        <li>Azure</li>
+                        <li>Docker</li>
+                        <li>CI/CD</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data & Analytics</h3>
+                    <ul>
+                        <li>Kafka</li>
+                        <li>Databricks</li>
+                        <li>Tableau</li>
+                        <li>PowerBI</li>
+                        <li>Excel</li>
+                        <li>Pandas</li>
+                        <li>SAP</li>
+                        <li>VBA</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Frameworks</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>Vue</li>
+                        <li>Next.js</li>
+                        <li>FastAPI</li>
+                        <li>Flutter</li>
+                        <li>SwiftUI</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>AI/ML Technologies</h3>
+                    <ul>
+                        <li>Machine Learning (ML)</li>
+                        <li>Natural Language Processing (NLP)</li>
+                        <li>Generative AI (GenAI)</li>
+                        <li>LangChain</li>
+                        <li>RAG</li>
+                        <li>Vertex AI Studio</li>
+                        <li>PyTorch</li>
+                        <li>LSTM/RNN Models</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Methodologies</h3>
+                    <ul>
+                        <li>VSCode</li>
+                        <li>Claude</li>
+                        <li>Agile</li>
+                        <li>Jira</li>
+                        <li>Microsoft Office Suite</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h2>Interests</h2>
+            <div class="interests-list">
+                <span class="interest-tag">Machine Learning</span>
+                <span class="interest-tag">Data Science</span>
+                <span class="interest-tag">Cloud Computing</span>
+                <span class="interest-tag">AI/LLM Development</span>
+                <span class="interest-tag">Data Engineering</span>
+                <span class="interest-tag">Big Data Analytics</span>
+                <span class="interest-tag">Time Series Analysis</span>
+                <span class="interest-tag">NLP</span>
+                <span class="interest-tag">Web Development</span>
+                <span class="interest-tag">Open Source</span>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Vineel Nadakuditi. All rights reserved.</p>
+        <p>Email: vineelnadakuditi@gmail.com | Phone: +1 (908) 938-9598</p>
+        <p><a href="https://linkedin.com/in/vineel-nadakuditi/" style="color: #667eea; text-decoration: none;">LinkedIn</a> | <a href="https://vineeln.com" style="color: #667eea; text-decoration: none;">Website</a></p>
+    </footer>
+</body>
+</html>
